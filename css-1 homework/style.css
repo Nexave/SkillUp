@@ -1,0 +1,121 @@
+/* body */
+body {
+    background-color: lightblue;
+}
+
+/* Все <h2> */
+h2 {
+    text-decoration: underline;
+}
+
+/* Все <h3> */
+h3 {
+    text-decoration: line-through;
+}
+
+/* Только <h2> с текстом "Contacts" и "Gallery" */
+.greencolor {
+    color: greenyellow;
+}
+
+/* Все <p> */
+p {
+    font-style: italic;
+}
+
+/* Только последний <p> секции "About us" */
+.about p:last-child {
+    color: white;
+}
+
+/* Все <b> */
+b {
+    font-size: 18px;
+    color: lightseagreen;
+}
+
+/* Каждый 2-й <b> в <p> секции "About us" */
+.about b:nth-child(even) {
+    color: red;
+}
+
+/* Все <a> */
+a {
+    letter-spacing: 3px;
+}
+
+/* Только <a> секции "Contacts" с номером (073) */
+.contacts>li:last-child a {
+    background-color: orange;
+}
+
+/* Все <img> */
+img {
+    border: 4px inset darkorchid;
+}
+
+/* Только <img>, на которых изображены люди */
+.people img {
+    border-radius: 50%;
+}
+
+/* Только <img>, на которых изображены мужчины */
+.people_man img{
+    transform: scale(.7);
+}
+
+/* Только <img>, на которых изображены женщины */
+.people_woman img {
+    opacity: .5;
+}
+
+/* Только <img> со вторым по счёту мужчиной */
+.people_man img:nth-child(3) {
+    border: 15px dashed orange;
+}
+
+/* <table>, все <th> и <td> */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Все <th> */
+th {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Только <th> в <tbody> */
+tbody th {
+    font-size: 25px;
+}
+
+/* Только <th> и <td>, у которых есть атрибуты "rowspan", "colspan" */
+th[colspan], th[rowspan], td[colspan], td[rowspan] {
+    font-style: italic;
+}
+
+/* Все <input>, кроме "кнопки" */
+input:not([type="submit"]) {
+    display: block;
+}
+
+/* Все <input>, кроме "кнопки", "radio" и "checkbox" */
+input:not([radio],[submit],[checkbox]) {
+    border: 2px solid aqua;
+}
+
+/* Все <b> секции "Follow us" */
+.follow b {
+    color: purple;
+}
+
+/* Кнопка для отправки данных */
+ input[type="submit"] {
+    background-color: lightgreen;
+}
+
+/* Только <h3> секции "Follow us" */
+.follow h3 {
+    text-transform: uppercase;
+}
