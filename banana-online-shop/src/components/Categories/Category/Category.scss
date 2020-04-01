@@ -1,0 +1,45 @@
+@import '../../../variables.scss';
+
+.category {
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-position 300ms ease;
+    background-image: linear-gradient(to right, $accent-color, $yellow-color);
+    background-size: 250%;
+    background-position: left;
+    user-select: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+    
+    @include media(576px) {
+        width: calc(100% / 3 - 5px);
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+    
+    @include media(768px) {
+        width: calc(100% / 3 - 5px);
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &:hover,
+    &_active {
+        background-position: right;
+    }
+
+    &_active {
+        cursor: default;
+    }
+}

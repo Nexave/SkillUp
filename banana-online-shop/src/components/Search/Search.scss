@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.search {
+    position: relative;
+    display: inline-block;
+
+    .fa-search {
+        position: absolute;
+        top: calc(50% - 16px / 2);
+        right: 10px;
+        color: #ccc;
+
+        &.focused {
+            color: $accent-color;
+        }
+    }
+
+    .input {
+        padding-right: 35px;
+    }
+}

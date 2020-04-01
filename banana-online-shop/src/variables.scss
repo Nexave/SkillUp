@@ -1,0 +1,22 @@
+// colors
+$accent-color: #cc01cc;
+$text-color: #414641;
+$yellow-color: yellow;
+
+// fonts
+$ff-cursive: 'Permanent Marker', cursive;
+$ff-common: 'Montserrat Alternates', sans-serif;
+$ff-heading: 'Oswald', sans-serif;
+
+// mixins
+@mixin media($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+// placeholders
+%wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}

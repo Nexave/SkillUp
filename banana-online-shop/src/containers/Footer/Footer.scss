@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.footer {
+    font-family: $ff-common;
+    background-color: $yellow-color;
+    padding: 20px;
+    text-align: center;
+
+    &__wrapper {
+        @extend %wrapper;
+    }
+}

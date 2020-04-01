@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+
+    @include media(768px) {
+        flex-direction: row;
+    }
+}

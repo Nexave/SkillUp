@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        @extend *;
+    }
+}
+
+body {
+    color: $text-color;
+}
+
+ul, ol {
+    list-style-type: none;
+}

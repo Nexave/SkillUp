@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    &__login {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    &__icon-wrapper {
+        margin-right: 30px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        border-radius: 50%;
+        padding: 5px;
+        box-sizing: content-box;
+        transition: background-color 200ms ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(#838383, .2);
+        }
+    }
+
+    &__icon {
+        margin: auto;
+        font-size: 1.6rem;
+    }
+}

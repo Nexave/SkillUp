@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.pagination-button {
+    font-family: $ff-common;
+    width: 35px;
+    height: 35px;
+    background-color: $accent-color;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition:
+        background-color 300ms ease,
+        text-shadow 300ms ease;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: lighten($accent-color, 30%);
+        text-shadow: 0 0 3px #fff;
+    }
+
+    &_active {
+        background-color: lighten($accent-color, 40%);
+        text-decoration: underline;
+        cursor: default;
+
+        &:hover {
+            background-color: lighten($accent-color, 40%);
+        }
+    }
+}

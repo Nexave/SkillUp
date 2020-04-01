@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.categories {
+    display: flex;
+    font-family: $ff-heading;
+    width: 100%;
+    flex-direction: column;
+    
+    @include media(576px) {
+        flex-direction: row;
+        margin-right: -5px;
+        margin-bottom: 20px;
+    }
+    
+    @include media(768px) {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.header {
+    padding: 20px;
+    background-color: #eee;
+    font-family: $ff-common;
+
+    &__wrapper {
+        @extend %wrapper;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        @include media(576px) {
+            flex-direction: row;
+        }
+    }
+}
