@@ -1,0 +1,15 @@
+.similar-movies {
+    max-width: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &__movie {
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+}

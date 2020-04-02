@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.toolbar {
+    font-family: $ff-common;
+    padding: 20px;
+    background-image: $bg-common;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        color: #fff;
+        width: 100%;
+    }
+}

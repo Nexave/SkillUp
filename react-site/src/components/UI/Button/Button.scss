@@ -1,0 +1,19 @@
+@import '../../../variables.scss';
+
+.button {
+    font-family: $ff-common;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #f5af19, #f12711);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &[disabled] {
+        background-image: linear-gradient(to right, #eee, #ccc);
+        color: $darkgrey-color;
+        cursor: not-allowed;
+    }
+}

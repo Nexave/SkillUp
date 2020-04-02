@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+
+.full-movie {
+    font-family: $ff-common;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, .8);
+    }
+
+    &__info {
+        margin-right: 30px;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__release {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__img-wrapper {
+        margin-bottom: 20px;
+        max-width: 350px;
+        width: 100%;
+        margin-right: 25px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__description {
+        position: relative;
+        z-index: 1;
+        line-height: 1.7;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .button {
+        position: relative;
+        z-index: 1;
+    }
+}

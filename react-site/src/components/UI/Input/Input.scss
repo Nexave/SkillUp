@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+
+.input {
+    font-size: 1rem;
+    font-family: $ff-common;
+    padding: 9px;
+    border: 1px solid #f0f0f4;
+    border-radius: 2px;
+    min-width: 350px;
+    background-color: #fff;
+    outline: none;
+
+    &:focus {
+        border-color: #7F7FD5;
+    }
+}

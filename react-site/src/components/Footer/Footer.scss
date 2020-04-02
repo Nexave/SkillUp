@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.footer {
+    padding: 20px;
+    background-image: $bg-common;
+    font-family: $ff-common;
+    text-align: center;
+
+    &__title {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.tooltip.__react_component_tooltip {
+    background-image: linear-gradient(to right, #f5af19, #f12711);
+    font-size: 1rem;
+
+    &.place-top {
+        &::after {
+            border-top-color: #f47a2c;
+        }
+    }
+
+    &.place-left {
+        &::after {
+            border-left-color: #f47a2c;
+        }
+    }
+
+    &.place-right {
+        &::after {
+            border-right-color: #f47a2c;
+        }
+    }
+
+    &.place-bottom {
+        &::after {
+            border-bottom-color: #f47a2c;
+        }
+    }
+}
